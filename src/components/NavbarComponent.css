@@ -1,0 +1,15 @@
+.Navbar {
+   position: absolute;
+   margin: 20px;
+}
+
+.Links {
+    margin-right: 20px;
+    text-decoration: none;
+    color: yellow;
+    font-weight: bold;
+}
+
+.Links:hover {
+    color: gray;
+}

@@ -1,0 +1,14 @@
+.Search {
+    display: flex;
+    justify-content: flex-end;
+    padding: 40px;
+}
+
+@media (max-width: 600px) {
+
+    .Search {
+        display: flex;
+        justify-content: center;
+    }
+
+}

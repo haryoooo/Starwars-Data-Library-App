@@ -1,0 +1,12 @@
+.Characters {
+    padding: 20px;
+}
+
+.Characters:hover {
+    transform: scale(1.02);
+}
+
+.isLoading {
+    margin: 100px auto;
+    text-align: center;
+}

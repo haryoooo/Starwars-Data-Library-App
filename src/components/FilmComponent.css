@@ -1,0 +1,12 @@
+.isLoading {
+    margin: 200px auto;
+    text-align: center;
+}
+
+.Film {
+    padding: 20px;
+}
+
+.Film:hover {
+    transform: scale(1.02);
+}
