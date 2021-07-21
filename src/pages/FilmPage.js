@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchFilms } from "../store/action/starWarsAction";
 import FilmDisplayComponent from "../components/FilmDisplayComponent";
 import SearchBarComponent from "../components/SearchBarComponent";
+import SearchHeaderComponent from "../components/SearchHeaderComponent";
 
 export default function FilmPages() {
   const [filteredName, setFilteredName] = useState("")
@@ -29,8 +30,9 @@ export default function FilmPages() {
 
   return (
     <>
+    <SearchHeaderComponent header={"https://fontmeme.com/permalink/210720/866782710852762308312537bc6ba4ac.png"} />
     <SearchBarComponent filterByName={filterByName} />
-    <div className="Film">
+    <div style={{ padding: 30 }}>
       <FilmDisplayComponent 
         isLoading={isLoading}
         film={filteredName ? filteredChar : film}

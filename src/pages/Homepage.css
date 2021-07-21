@@ -1,14 +1,21 @@
 .Homepage {
-    background-image: url('../assets/star-wars-backgrounds.jpg');
     background-size: cover;
     height: 570px;
 }
 
 .Buttons {
-    margin: 30px auto;
+    margin: 20px auto;
     width: fit-content;
 }
 
-button {
-    font-weight: bold;
+.Button {
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+
+    .Button {
+        font-size: 14px;
+    }    
+
 }

@@ -56,6 +56,7 @@ export function fetchChar() {
 
     function fetchMoviesPlayByChar(results) {
       return (dispatch) => {
+        dispatch(loadingData(true));
         let arr = [];
         for (let i = 0; i < results.length; i++) {
           let theData = results[i];
@@ -65,6 +66,7 @@ export function fetchChar() {
             const datas = await res.json();
             arr.push({ id: i, datas });
             dispatch(loadfilmsPlayByChar(arr));
+            dispatch(loadingData(false));
           });
         }
         let apiData = data.results.map((value, index) => {
@@ -74,6 +76,7 @@ export function fetchChar() {
             character: value.character,
             films: arr,
             mass: value.mass,
+            gender: value.gender,
             height: value.height,
             birth_year: value.birth_year,
             eye_color: value.eye_color,
@@ -81,7 +84,6 @@ export function fetchChar() {
           };
         });
         dispatch(loadChar(apiData));
-        dispatch(loadingData(false));
       };
     }
   };

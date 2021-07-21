@@ -1,35 +1,21 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import TextField from "@material-ui/core/TextField";
-import Grid from "@material-ui/core/Grid";
-import SearchIcon from "@material-ui/icons/Search";
+import  { Form, FormControl } from 'react-bootstrap'
 import './SearchBarComponent.css'
 
-const useStyles = makeStyles((theme) => ({
-  margin: {
-    margin: theme.spacing(1),
-  },
-}));
-
 export default function SearchBarComponent(props){
-  const classes = useStyles();
 
   return (
     <div className="Search">
-      <div className={classes.margin}>
-        <Grid container spacing={1} alignItems="flex-end">
-          <Grid item>
-            <SearchIcon />
-          </Grid>
-          <Grid item>
-            <TextField
-              id="input-with-icon-grid"
-              label="Search"
-              onChange={props.filterByName}
-            />
-          </Grid>
-        </Grid>
-      </div>
+      <Form className="d-flex mr-3" >
+      <FormControl
+        type="search"
+        placeholder="Search"
+        className="mr-2"
+        aria-label="Search"
+        onChange={props.filterByName}
+        color="warning"
+      />
+      </Form>
     </div>
   );
 }

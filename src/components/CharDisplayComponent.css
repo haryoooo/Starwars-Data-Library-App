@@ -3,3 +3,10 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+
+.EmptyHeader {
+    font-weight: bold;
+    color: gold;
+    text-align: center;
+    margin: 50px auto;
+}

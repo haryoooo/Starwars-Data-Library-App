@@ -7,13 +7,19 @@ export default function CharDisplayComponent(props) {
   if (props.isLoading) {
     return (
       <div className="isLoading">
-        <Spinner animation="border" />
+        <Spinner animation="border" variant="warning" />
       </div>
     );
   }
 
   return (
-    <div className="CharDisplay">
+    <div>
+      {(props.character.length === 0) ? (
+        <div>
+            <h1 className="EmptyHeader">Characters not found...</h1>
+        </div>
+      ) : (
+      <div className="CharDisplay">
       {props.character.map((value, idx) => {
         return (
           <CharComponent
@@ -31,6 +37,8 @@ export default function CharDisplayComponent(props) {
           />
         );
       })}
+      </div>
+      )};
     </div>
   );
 }

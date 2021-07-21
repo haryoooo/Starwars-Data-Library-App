@@ -1,7 +1,9 @@
 .Search {
     display: flex;
-    justify-content: flex-end;
-    padding: 40px;
+    justify-content: center;
+    padding: 20px;
+    width: 300px;
+    margin: 0px auto;
 }
 
 @media (max-width: 600px) {
@@ -9,6 +11,7 @@
     .Search {
         display: flex;
         justify-content: center;
+        width: 200px;
     }
 
 }

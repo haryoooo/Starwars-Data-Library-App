@@ -1,0 +1,23 @@
+.SearchHeader {
+    display: 'flex';
+    justify-content: 'center';
+    text-align: center;
+    color: "white";
+    margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+
+    .SearchHeader img {
+        width: 400px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .SearchHeader img {
+        width: 340px;
+    }
+
+}

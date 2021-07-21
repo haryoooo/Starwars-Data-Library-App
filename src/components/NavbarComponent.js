@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function NavbarComponent() {
   return (
     <div className="Navbars">
-      <Navbar bg="dark" variant="dark">
+      <Navbar className="navbar" variant="dark">
         <Container>
           <Nav>
             <Nav.Link>
