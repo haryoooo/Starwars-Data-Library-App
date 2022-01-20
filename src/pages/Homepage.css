@@ -1,21 +1,27 @@
 .Homepage {
-    background-size: cover;
-    height: 570px;
+  background-size: cover;
+  height: 570px;
 }
 
-.Buttons {
-    margin: 20px auto;
-    width: fit-content;
+.HeaderText {
+  margin: 0px auto;
+  width: fit-content;
+  color: #ffe81f;
+  font-size: 24px;
+  font-weight: bold;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
 }
 
 .Button {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 @media (max-width: 600px) {
-
-    .Button {
-        font-size: 14px;
-    }    
-
+  .HeaderText {
+    font-size: 16px;
+  }
 }
